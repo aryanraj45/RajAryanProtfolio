@@ -1,62 +1,59 @@
+# My Perfect Portfolio
 
+A modern, responsive, and interactive personal portfolio website showcasing my projects, skills, and professional experience. Built with performance and design in mind using the latest web technologies.
 
-## Project info
+## ✨ Features
 
-## How can I edit this code?
+- **Modern UI/UX**: Clean, glassmorphism-inspired design with smooth animations.
+- **Dark/Light Mode**: Fully functional theme toggle for user preference.
+- **Responsive Design**: Optimized for all devices, from mobile to desktop.
+- **Interactive Project Cards**: Detailed project showcases with preview images and direct links.
+- **Resume Section**: View and download resume capabilities.
+- **Contact Integration**: Direct links to Email, LinkedIn, and GitHub.
 
-There are several ways of editing your application.
+## 🛠️ Technologies Used
 
-**Use Lovable**
+- **Framework**: React.js with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS, Vanilla CSS (custom variables)
+- **Icons**: Lucide React
+- **Hosting**: Vercel (recommended)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## 🚀 Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+Follow these steps to run the project locally:
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Ensure you have **Node.js** & **npm** installed.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation
 
-Follow these steps:
+1.  **Clone the repository:**
+    ```sh
+    git clone https://github.com/aryanraj45/my-perfect-portfolio.git
+    ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2.  **Navigate to the project directory:**
+    ```sh
+    cd my-perfect-portfolio
+    ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3.  **Install dependencies:**
+    ```sh
+    npm install
+    ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+4.  **Start the development server:**
+    ```sh
+    npm run dev
+    ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+The app will run at `http://localhost:8080` (or similar portfolio).
 
-**Edit a file directly in GitHub**
+## 👨‍💻 Created By
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-
-
+**Raj Arayan**
+*   **Founding Engineer at INSTACK AI**
+*   [GitHub](https://github.com/aryanraj45)
+*   [LinkedIn](https://www.linkedin.com/in/raj-a-bb9929220)
