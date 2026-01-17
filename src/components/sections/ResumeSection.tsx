@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap, Eye } from "lucide-react";
+import { Briefcase, GraduationCap, Eye, Download } from "lucide-react";
 
 const ResumeSection = () => {
   const experience = [
@@ -40,18 +40,30 @@ const ResumeSection = () => {
     databases: ["MySQL", "MongoDB", "PostgreSQL", "Google Sheets API"],
     tools: ["Git", "GitHub", "VS Code", "Docker", "Google Calendar API", "RESTful APIs"],
   };
-
   return (
     <section>
       <h2 className="section-title accent-underline">Resume</h2>
 
-      <a
-        href="#"
-        className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors mt-6 mb-8"
-      >
-        <Eye className="w-4 h-4" />
-        <span className="font-medium">View Resume</span>
-      </a>
+      <div className="flex gap-6 mt-6 mb-8">
+        <a
+          href="/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+        >
+          <Eye className="w-4 h-4" />
+          <span className="font-medium">View Resume</span>
+        </a>
+
+        <a
+          href="/resume.pdf"
+          download="Aryan_Raj_Resume.pdf"
+          className="inline-flex items-center gap-2 text-primary hover:text-primary/80 transition-colors"
+        >
+          <Download className="w-4 h-4" />
+          <span className="font-medium">Download Resume</span>
+        </a>
+      </div>
 
       {/* Experience Section */}
       <div className="mb-12">
