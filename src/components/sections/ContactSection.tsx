@@ -15,7 +15,7 @@ const ContactSection = () => {
       name: "LeetCode",
       username: "aryanraj45",
       image: leetcodeProfile,
-      href: "https://leetcode.com/u/aryanraj45/",
+      href: "https://leetcode.com/u/brdoLDGvJ8/",
     },
     {
       name: "GitHub",
