@@ -34,7 +34,7 @@ const ProjectsSection = () => {
         "Credit calculations and verification processes",
       ],
       techStack: ["JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
-      github: "https://github.com/rajarayan",
+      github: "https://github.com/aryanraj45/blue-carbon-registry",
     },
   ];
 

@@ -20,7 +20,7 @@ const ProfileSidebar = () => {
       icon: <Linkedin className="w-5 h-5" />,
       label: "LINKEDIN",
       value: "View",
-      href: "https://linkedin.com/in/rajarayan",
+      href: "https://www.linkedin.com/in/raj-a-bb9929220",
     },
     {
       icon: <FileText className="w-5 h-5" />,
@@ -36,14 +36,14 @@ const ProfileSidebar = () => {
     {
       icon: <Github className="w-5 h-5" />,
       label: "GITHUB",
-      value: "Collaborate",
-      href: "https://github.com/rajarayan",
+      value: "aryanraj45",
+      href: "https://github.com/aryanraj45",
     },
     {
       icon: <Code2 className="w-5 h-5" />,
       label: "LEETCODE",
       value: "Check it out",
-      href: "https://leetcode.com/rajarayan",
+      href: "https://leetcode.com/your_username/",
     },
   ];
 
