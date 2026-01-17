@@ -3,6 +3,37 @@ import { ExternalLink, Github } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
+      title: "Blue Carbon Registry",
+      date: "2025",
+      description:
+        "Full-stack blockchain-powered platform for transparent blue carbon credit management using Solana for immutable credit verification and satellite-based AI for ecosystem monitoring.",
+      highlights: [
+        "Solana blockchain integration for secure, transparent carbon credit verification & tokenization",
+        "Satellite-based AI monitoring for real-time ecosystem health tracking",
+        "33,500+ blockchain verifications processed with 100% transparency",
+        "Interactive globe visualization with live environmental data dashboard",
+      ],
+      techStack: ["Solana", "React.js", "Node.js", "Express.js", "MongoDB", "Satellite AI"],
+      github: "https://github.com/aryanraj45/blue-carbon-registry",
+      liveLink: "https://blue-carbon-registry-mu.vercel.app/homepage",
+      previewImage: "/blue-carbon-preview.png",
+    },
+    {
+      title: "Mental Peace",
+      date: "2025",
+      description:
+        "A comprehensive mental health application designed to support well-being through mood tracking, guided meditation, and community support features.",
+      highlights: [
+        "Mood tracking and journaling system with daily reflection tools",
+        "Curated guided meditation and relaxation exercise library",
+        "Community chat and support forum for peer connection",
+        "Goal setting and personal progress monitoring dashboard",
+      ],
+      techStack: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.io"],
+      github: "https://github.com/aryanraj45/Mental-health",
+      previewImage: "/mental-peace-preview.png",
+    },
+    {
       title: "AI Salon Receptionist",
       date: "Oct 2025",
       description:
@@ -12,6 +43,7 @@ const ProjectsSection = () => {
         "14-day advance booking rules and eligibility screening workflows",
       ],
       techStack: ["Retell AI", "N8N", "Google Calendar API", "Webhooks", "JSON Schema"],
+      previewImage: "/ai-salon-preview.png",
     },
     {
       title: "AI Dental Receptionist",
@@ -23,18 +55,7 @@ const ProjectsSection = () => {
         "Multi-channel notification system",
       ],
       techStack: ["Retell AI", "N8N", "Google Calendar API", "Automation Workflows"],
-    },
-    {
-      title: "Blue Carbon Registry",
-      date: "2024",
-      description:
-        "Developed full-stack web application to track and manage blue carbon credits with RESTful APIs and intuitive UI for data visualization.",
-      highlights: [
-        "Complex workflow logic for handling multiple data types",
-        "Credit calculations and verification processes",
-      ],
-      techStack: ["JavaScript", "React.js", "Node.js", "Express.js", "MongoDB"],
-      github: "https://github.com/aryanraj45/blue-carbon-registry",
+      previewImage: "/ai-dental-preview.png",
     },
   ];
 
@@ -44,7 +65,26 @@ const ProjectsSection = () => {
 
       <div className="grid gap-6 mt-8">
         {projects.map((project, index) => (
-          <div key={index} className="project-card">
+          <div
+            key={index}
+            className={`project-card ${project.liveLink ? 'cursor-pointer' : ''}`}
+            onClick={() => {
+              if (project.liveLink) {
+                window.open(project.liveLink, '_blank', 'noopener,noreferrer');
+              }
+            }}
+          >
+            {/* Preview Image */}
+            {project.previewImage && (
+              <div className="mb-4 rounded-lg overflow-hidden border border-primary/20">
+                <img
+                  src={project.previewImage}
+                  alt={`${project.title} Preview`}
+                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            )}
+
             <div className="flex items-start justify-between mb-4">
               <div>
                 <h3 className="text-lg font-semibold text-foreground">
@@ -59,16 +99,22 @@ const ProjectsSection = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-lg bg-secondary hover:bg-secondary/80 text-muted-foreground hover:text-primary transition-all"
+                    onClick={(e) => e.stopPropagation()}
                   >
                     <Github className="w-4 h-4" />
                   </a>
                 )}
-                <a
-                  href="#"
-                  className="p-2 rounded-lg bg-secondary hover:bg-secondary/80 text-muted-foreground hover:text-primary transition-all"
-                >
-                  <ExternalLink className="w-4 h-4" />
-                </a>
+                {project.liveLink && (
+                  <a
+                    href={project.liveLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary transition-all"
+                    onClick={(e) => e.stopPropagation()}
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                  </a>
+                )}
               </div>
             </div>
 
