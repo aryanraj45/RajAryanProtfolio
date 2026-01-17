@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Code2, ExternalLink } from "lucide-react";
+import { Linkedin, Github, Code2, ExternalLink } from "lucide-react";
 
 const ContactSection = () => {
   const socialLinks = [
@@ -37,28 +37,14 @@ const ContactSection = () => {
         having a chat about technology. Feel free to reach out!
       </p>
 
-      {/* Mail Button */}
-      <a
-        href="mailto:rajaryan445567@gmail.com"
-        className="inline-flex items-center gap-3 px-8 py-4 bg-secondary border border-border rounded-xl hover:border-primary/50 hover:bg-secondary/80 transition-all duration-300 mb-12"
-      >
-        <Mail className="w-5 h-5 text-primary" />
-        <span className="text-foreground font-medium">Mail</span>
-      </a>
-
-      {/* Also View Section */}
-      <h3 className="text-xl font-display font-semibold text-foreground mb-6 accent-underline">
-        Also View
-      </h3>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {socialLinks.map((link, index) => (
           <a
             key={index}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="group relative overflow-hidden rounded-xl border border-border bg-secondary/50 hover:border-primary/30 transition-all duration-300"
+            className="group relative overflow-hidden rounded-xl border border-border bg-secondary/50 hover:border-primary/30 transition-all duration-300 flex-1"
           >
             {/* Preview Card Header with gradient */}
             <div className={`h-20 bg-gradient-to-r ${link.color} opacity-20 group-hover:opacity-30 transition-opacity`} />
@@ -82,35 +68,6 @@ const ContactSection = () => {
             </div>
           </a>
         ))}
-      </div>
-
-      {/* Contact Info */}
-      <div className="mt-12 p-6 glass-card">
-        <h4 className="text-lg font-semibold text-foreground mb-4">Direct Contact</h4>
-        <div className="grid sm:grid-cols-2 gap-4">
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
-              <Mail className="w-5 h-5 text-primary" />
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground">Email</p>
-              <a href="mailto:rajaryan445567@gmail.com" className="text-foreground hover:text-primary transition-colors">
-                rajaryan445567@gmail.com
-              </a>
-            </div>
-          </div>
-          <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary/20 flex items-center justify-center">
-              <span className="text-primary">📞</span>
-            </div>
-            <div>
-              <p className="text-xs text-muted-foreground">Phone</p>
-              <a href="tel:+919523542240" className="text-foreground hover:text-primary transition-colors">
-                +91 9523542240
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
