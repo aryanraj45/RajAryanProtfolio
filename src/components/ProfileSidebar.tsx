@@ -68,7 +68,6 @@ const ProfileSidebar = () => {
           
           <div className="status-badge">
             <span>Founding Engineer at INSTACK AI</span>
-            <span className="text-primary">🚀</span>
           </div>
           
           <div className="mt-4 p-3 rounded-full bg-secondary/50 border border-border">
