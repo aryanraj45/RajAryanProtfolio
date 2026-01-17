@@ -36,32 +36,32 @@ const AboutSection = () => {
     <section>
       <h2 className="section-title accent-underline">About Me</h2>
 
-      <div className="space-y-6 mt-8 text-secondary-foreground leading-relaxed">
-        <p>
+      <div className="space-y-6 mt-8 text-secondary-foreground leading-relaxed text-base">
+        <p className="text-lg">
           I am a passionate and driven <span className="text-foreground font-medium">Founding Engineer Intern at INSTACK AI</span> with a strong foundation in Computer Science. Currently pursuing my B.Tech in Instrumentation and Control Engineering at{" "}
           <span className="text-foreground font-medium">Netaji Subhas University of Technology (NSUT), Delhi</span>.
         </p>
 
-        <p>
+        <p className="text-lg">
           Throughout my journey, I have developed expertise in{" "}
           <span className="text-primary">full-stack web development</span>,{" "}
           <span className="text-primary">AI automation</span>, and{" "}
           <span className="text-primary">backend engineering</span>. I've built production-ready applications, engineered AI voice agents with 95%+ accuracy, and developed scalable backend systems.
         </p>
 
-        <p>
+        <p className="text-lg">
           Outside of work, I enjoy solving algorithmic problems, contributing to open-source projects, and continuously learning new technologies. I was selected as a{" "}
           <span className="text-foreground font-medium">SIH 2025 Semi-Finalist</span> among top 500 teams and secured a rank in the{" "}
           <span className="text-foreground font-medium">top 3% in JEE Mains 2024</span> among 1.6 million candidates.
         </p>
 
-        <p>
+        <p className="text-lg">
           As a Software Engineer, I am passionate about creating innovative solutions and pushing the boundaries of technology. With my strong technical skills, collaborative mindset, and dedication to excellence, I am confident in my ability to contribute to the success of any software development team.
         </p>
       </div>
 
       {/* Interests Section */}
-      <h3 className="text-xl font-display font-semibold text-foreground mt-12 mb-6">
+      <h3 className="text-2xl font-display font-semibold text-foreground mt-12 mb-6">
         My Interests
       </h3>
 
@@ -69,10 +69,10 @@ const AboutSection = () => {
         {interests.map((interest, index) => (
           <div key={index} className="interest-card">
             <div className="interest-icon">{interest.icon}</div>
-            <h4 className="text-lg font-semibold text-foreground mb-2">
+            <h4 className="text-xl font-semibold text-foreground mb-2">
               {interest.title}
             </h4>
-            <p className="text-sm text-muted-foreground mb-3">
+            <p className="text-base text-muted-foreground mb-3">
               {interest.description}
             </p>
             <span className="text-xs text-primary font-medium">
