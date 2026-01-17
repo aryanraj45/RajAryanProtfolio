@@ -35,26 +35,26 @@ const AboutSection = () => {
   return (
     <section>
       <h2 className="section-title accent-underline">About Me</h2>
-      
+
       <div className="space-y-6 mt-8 text-secondary-foreground leading-relaxed">
         <p>
           I am a passionate and driven <span className="text-foreground font-medium">Founding Engineer Intern at INSTACK AI</span> with a strong foundation in Computer Science. Currently pursuing my B.Tech in Instrumentation and Control Engineering at{" "}
           <span className="text-foreground font-medium">Netaji Subhas University of Technology (NSUT), Delhi</span>.
         </p>
-        
+
         <p>
           Throughout my journey, I have developed expertise in{" "}
           <span className="text-primary">full-stack web development</span>,{" "}
           <span className="text-primary">AI automation</span>, and{" "}
           <span className="text-primary">backend engineering</span>. I've built production-ready applications, engineered AI voice agents with 95%+ accuracy, and developed scalable backend systems.
         </p>
-        
+
         <p>
           Outside of work, I enjoy solving algorithmic problems, contributing to open-source projects, and continuously learning new technologies. I was selected as a{" "}
           <span className="text-foreground font-medium">SIH 2025 Semi-Finalist</span> among top 500 teams and secured a rank in the{" "}
           <span className="text-foreground font-medium">top 3% in JEE Mains 2024</span> among 1.6 million candidates.
         </p>
-        
+
         <p>
           As a Software Engineer, I am passionate about creating innovative solutions and pushing the boundaries of technology. With my strong technical skills, collaborative mindset, and dedication to excellence, I am confident in my ability to contribute to the success of any software development team.
         </p>
@@ -64,7 +64,7 @@ const AboutSection = () => {
       <h3 className="text-xl font-display font-semibold text-foreground mt-12 mb-6">
         My Interests
       </h3>
-      
+
       <div className="grid md:grid-cols-2 gap-4">
         {interests.map((interest, index) => (
           <div key={index} className="interest-card">
