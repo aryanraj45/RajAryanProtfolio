@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       previewImage: "/blue-carbon-preview.png",
     },
     {
-      title: "Mental Peace",
+      title: "Mental Peace",//hello world
       date: "2025",
       description:
         "A comprehensive mental health application designed to support well-being through mood tracking, guided meditation, and community support features.",
@@ -61,13 +61,13 @@ const ProjectsSection = () => {
 
   return (
     <section>
-      <h2 className="section-title accent-underline">Projects</h2>
+      <h2 className="section-title accent-underline mb-8">Projects</h2>
 
-      <div className="grid gap-6 mt-8">
+      <div className="grid gap-8 mt-10">
         {projects.map((project, index) => (
           <div
             key={index}
-            className={`project-card ${project.liveLink ? 'cursor-pointer' : ''}`}
+            className={`project-card group hover:shadow-xl hover:shadow-primary/5 ${project.liveLink ? 'cursor-pointer' : ''}`}
             onClick={() => {
               if (project.liveLink) {
                 window.open(project.liveLink, '_blank', 'noopener,noreferrer');
@@ -76,32 +76,32 @@ const ProjectsSection = () => {
           >
             {/* Preview Image */}
             {project.previewImage && (
-              <div className="mb-4 rounded-lg overflow-hidden border border-primary/20">
+              <div className="mb-6 rounded-xl overflow-hidden border border-border group-hover:border-primary/40 transition-colors">
                 <img
                   src={project.previewImage}
                   alt={`${project.title} Preview`}
-                  className="w-full h-48 object-cover hover:scale-105 transition-transform duration-300"
+                  className="w-full h-56 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
             )}
 
-            <div className="flex items-start justify-between mb-4">
+            <div className="flex items-start justify-between mb-5">
               <div>
-                <h3 className="text-lg font-semibold text-foreground">
+                <h3 className="text-2xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                   {project.title}
                 </h3>
-                <p className="text-sm text-primary">{project.date}</p>
+                <p className="text-sm text-primary font-medium">{project.date}</p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex gap-3">
                 {project.github && (
                   <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-secondary hover:bg-secondary/80 text-muted-foreground hover:text-primary transition-all"
+                    className="p-3 rounded-lg bg-secondary hover:bg-secondary/80 text-muted-foreground hover:text-primary transition-all hover:scale-110"
                     onClick={(e) => e.stopPropagation()}
                   >
-                    <Github className="w-4 h-4" />
+                    <Github className="w-5 h-5" />
                   </a>
                 )}
                 {project.liveLink && (
@@ -109,22 +109,22 @@ const ProjectsSection = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-2 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary transition-all"
+                    className="p-3 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary transition-all hover:scale-110"
                     onClick={(e) => e.stopPropagation()}
                   >
-                    <ExternalLink className="w-4 h-4" />
+                    <ExternalLink className="w-5 h-5" />
                   </a>
                 )}
               </div>
             </div>
 
-            <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
+            <p className="text-base text-muted-foreground mb-5 leading-relaxed">
               {project.description}
             </p>
 
-            <ul className="space-y-1 mb-4">
+            <ul className="space-y-2 mb-6">
               {project.highlights.map((highlight, i) => (
-                <li key={i} className="text-sm text-secondary-foreground">
+                <li key={i} className="text-sm text-secondary-foreground leading-relaxed">
                   • {highlight}
                 </li>
               ))}
@@ -134,7 +134,7 @@ const ProjectsSection = () => {
               {project.techStack.map((tech) => (
                 <span
                   key={tech}
-                  className="px-2.5 py-1 text-xs bg-primary/10 text-primary rounded-md"
+                  className="px-3 py-1.5 text-sm bg-primary/10 text-primary rounded-lg font-medium hover:bg-primary/20 transition-colors"
                 >
                   {tech}
                 </span>
