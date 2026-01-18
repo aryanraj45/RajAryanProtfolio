@@ -65,11 +65,11 @@ const ProfileSidebar = () => {
 
   return (
     <aside className="w-full lg:w-80 xl:w-96 shrink-0">
-      <div className="glass-card p-6 sticky top-8">
+      <div className="glass-card p-8 sticky top-8">
         {/* Avatar Section */}
-        <div className="flex flex-col items-center mb-6">
-          <div className="relative mb-4">
-            <div className="w-40 h-40 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary border-2 border-border">
+        <div className="flex flex-col items-center mb-8">
+          <div className="relative mb-6">
+            <div className="w-44 h-44 rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-secondary border-2 border-border shadow-lg">
               <img
                 src={avatarImage}
                 alt="Raj Arayan"
@@ -78,17 +78,17 @@ const ProfileSidebar = () => {
             </div>
           </div>
 
-          <h1 className="text-2xl font-display font-bold text-foreground mb-3">
+          <h1 className="text-3xl font-display font-bold text-foreground mb-4 text-center">
             Raj Arayan
           </h1>
 
-          <div className="status-badge">
-            <span>Founding Engineer at INSTACK AI</span>
+          <div className="status-badge px-6 py-3">
+            <span className="font-medium">Founding Engineer at INSTACK AI</span>
           </div>
 
           <button
             onClick={toggleTheme}
-            className="mt-4 p-3 rounded-full bg-secondary/50 border border-border hover:bg-secondary transition-colors cursor-pointer group"
+            className="mt-6 p-3 rounded-full bg-secondary/50 border border-border hover:bg-secondary transition-colors cursor-pointer group"
             title={theme === 'dark' ? "Switch to Light Mode" : "Switch to Dark Mode"}
           >
             {theme === 'dark' ? (
@@ -100,10 +100,10 @@ const ProfileSidebar = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px bg-border my-6" />
+        <div className="h-px bg-border my-8" />
 
         {/* Links Section */}
-        <nav className="space-y-1">
+        <nav className="space-y-2">
           {links.map((link, index) => (
             <a
               key={index}
@@ -116,10 +116,10 @@ const ProfileSidebar = () => {
                 {link.icon}
               </div>
               <div className="flex-1 min-w-0">
-                <p className="text-xs text-muted-foreground uppercase tracking-wider">
+                <p className="text-xs text-muted-foreground uppercase tracking-widest font-medium mb-1">
                   {link.label}
                 </p>
-                <p className="text-sm text-foreground truncate">
+                <p className="text-sm text-foreground truncate font-medium">
                   {link.value}
                 </p>
               </div>
