@@ -15,7 +15,7 @@ const SocialProfilesSection = () => {
     const profiles: ProfileCard[] = [
         {
             name: "LinkedIn",
-            image: linkedinProfile,
+            image: linkedinProfile,//here 
             url: "https://www.linkedin.com/in/raj-a-bb9929220",
             color: "#0A66C2",
             bgGradient: "from-[#0A66C2]/20 to-[#0A66C2]/5",
