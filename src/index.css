@@ -147,15 +147,15 @@
   }
 
   .section-title {
-    @apply text-2xl font-semibold text-foreground mb-6;
+    @apply text-3xl font-semibold text-foreground mb-8;
   }
 
   .interest-card {
-    @apply bg-secondary/50 rounded-xl p-6 border border-border hover:border-primary/30 transition-all duration-300;
+    @apply bg-secondary/50 rounded-xl p-8 border border-border hover:border-primary/40 transition-all duration-300 hover:shadow-lg hover:shadow-primary/5;
   }
 
   .interest-icon {
-    @apply w-12 h-12 rounded-lg bg-primary/20 flex items-center justify-center text-primary mb-4;
+    @apply w-14 h-14 rounded-xl bg-primary/20 flex items-center justify-center text-primary mb-5;
   }
 
   .floating-dot {
@@ -173,15 +173,15 @@
   }
 
   .experience-card {
-    @apply relative pl-6 pb-8 border-l border-border last:pb-0;
+    @apply relative pl-8 pb-10 border-l-2 border-border last:pb-0;
   }
 
   .skill-tag {
-    @apply px-3 py-1.5 bg-secondary rounded-lg text-sm text-muted-foreground;
+    @apply px-4 py-2 bg-secondary rounded-lg text-base text-foreground font-medium border border-border;
   }
 
   .project-card {
-    @apply glass-card p-6 hover:border-primary/30 transition-all duration-300;
+    @apply glass-card p-8 hover:border-primary/40 transition-all duration-300;
   }
 }
 
