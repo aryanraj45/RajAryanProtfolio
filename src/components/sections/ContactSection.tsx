@@ -13,13 +13,13 @@ const ContactSection = () => {
     },
     {
       name: "LeetCode",
-      username: "aryanraj45",
+      username: "aryanraj45",//here
       image: leetcodeProfile,
       href: "https://leetcode.com/u/brdoLDGvJ8/",
     },
     {
       name: "GitHub",
-      username: "aryanraj45",
+      username: "aryanraj45",//
       image: githubProfile,
       href: "https://github.com/aryanraj45",
     },
