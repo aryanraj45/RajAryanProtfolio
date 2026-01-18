@@ -32,14 +32,14 @@ const Index = () => {
     <div className="min-h-screen bg-background relative">
       <FloatingDots />
       
-      <div className="container mx-auto px-4 py-8 lg:py-12">
+      <div className="container mx-auto px-4 py-8 lg:py-16">
         <div className="flex flex-col lg:flex-row gap-8">
           {/* Left Sidebar */}
           <ProfileSidebar />
 
           {/* Main Content */}
           <main className="flex-1 min-w-0">
-            <div className="glass-card p-6 md:p-8">
+            <div className="glass-card p-8 md:p-10 lg:p-12">
               <TabNavigation activeTab={activeTab} onTabChange={setActiveTab} />
               {renderSection()}
             </div>
