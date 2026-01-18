@@ -10,13 +10,13 @@ const AchievementsSection = () => {
     },
     {
       icon: <Target className="w-6 h-6" />,
-      title: "JEE Mains 2024",
+      title: "JEE Mains 2024",//here 
       description:
         "Secured a rank in the top 3% among 1.6 million candidates.",
     },
     {
       icon: <Code2 className="w-6 h-6" />,
-      title: "Hacktoberfest 2025",
+      title: "Hacktoberfest 2025",//
       description:
         "Successfully completed Hacktoberfest, contributing to multiple open-source projects including interactive gaming applications with voice I/O and UI enhancements.",
     },
