@@ -17,7 +17,7 @@ const ProfileSidebar = () => {
     if (theme === 'light') {
       root.classList.add('light');
     } else {
-      root.classList.remove('light');
+      root.classList.remove('light');//
     }
   }, [theme]);
 
