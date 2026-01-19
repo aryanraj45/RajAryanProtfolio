@@ -18,7 +18,7 @@ const ProjectsSection = () => {
       liveLink: "https://blue-carbon-registry-mu.vercel.app/homepage",
       previewImage: "/blue-carbon-preview.png",
     },
-    {
+    {//
       title: "Mental Peace",//hello world
       date: "2025",
       description:
