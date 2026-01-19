@@ -3,7 +3,7 @@ interface TabNavigationProps {
   onTabChange: (tab: string) => void;
 }
 
-const tabs = [
+const tabs = [//
   { id: "about", label: "About" },
   { id: "resume", label: "Resume" },
   { id: "projects", label: "Projects" },
