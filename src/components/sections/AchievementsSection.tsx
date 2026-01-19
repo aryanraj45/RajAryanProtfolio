@@ -13,7 +13,7 @@ const AchievementsSection = () => {
       title: "JEE Mains 2024",//here 
       description:
         "Secured a rank in the top 3% among 1.6 million candidates.",
-    },
+    },//
     {
       icon: <Code2 className="w-6 h-6" />,
       title: "Hacktoberfest 2025",//
