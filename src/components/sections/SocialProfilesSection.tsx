@@ -8,7 +8,7 @@ interface ProfileCard {
     image: string;
     url: string;
     color: string;
-    bgGradient: string;
+    bgGradient: string;//
 }
 
 const SocialProfilesSection = () => {
