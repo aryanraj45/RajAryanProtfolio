@@ -107,7 +107,12 @@
     font-family: 'Inter', sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     font-family: 'Poppins', sans-serif;
   }
 }
@@ -164,8 +169,17 @@
   }
 
   @keyframes float {
-    0%, 100% { transform: translateY(0px); opacity: 0.6; }
-    50% { transform: translateY(-10px); opacity: 1; }
+
+    0%,
+    100% {
+      transform: translateY(0px);
+      opacity: 0.6;
+    }
+
+    50% {
+      transform: translateY(-10px);
+      opacity: 1;
+    }
   }
 
   .status-badge {
@@ -202,3 +216,5 @@
 ::-webkit-scrollbar-thumb:hover {
   background: hsl(var(--primary));
 }
+
+/* Maintenance update 7/15 */
