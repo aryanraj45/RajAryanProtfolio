@@ -17,7 +17,7 @@ const ProfileSidebar = () => {
     if (theme === 'light') {
       root.classList.add('light');
     } else {
-      root.classList.remove('light');//
+      root.classList.remove('light');
     }
   }, [theme]);
 
@@ -132,3 +132,5 @@ const ProfileSidebar = () => {
 };
 
 export default ProfileSidebar;
+
+// Maintenance update 3/15
