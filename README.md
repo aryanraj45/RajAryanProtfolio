@@ -57,3 +57,5 @@ The app will run at `http://localhost:8080` (or similar portfolio).
 *   **Founding Engineer at INSTACK AI**
 *   [GitHub](https://github.com/aryanraj45)
 *   [LinkedIn](https://www.linkedin.com/in/raj-a-bb9929220)
+
+<!-- Maintenance update 1/15 -->
