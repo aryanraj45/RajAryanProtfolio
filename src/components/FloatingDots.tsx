@@ -13,7 +13,7 @@ const FloatingDots = () => {
   return (
     <div className="fixed inset-0 pointer-events-none overflow-hidden">
       {dots.map((dot, index) => (
-        <div
+        <div//
           key={index}
           className="floating-dot"
           style={{
@@ -29,3 +29,5 @@ const FloatingDots = () => {
 };
 
 export default FloatingDots;
+
+// Maintenance update 2/15
