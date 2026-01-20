@@ -12,7 +12,7 @@ const AboutSection = () => {
     {
       icon: <Bot className="w-6 h-6" />,
       title: "AI & Automation",
-      description://
+      description:
         "Engineering AI voice agents and automation workflows using Retell AI, N8N, and webhook integrations with 95%+ accuracy in intent recognition.",
       highlight: "Retell AI & N8N",
     },
@@ -86,3 +86,5 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+
+// Maintenance update 4/15
