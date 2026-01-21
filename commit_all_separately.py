@@ -5,7 +5,7 @@ def run_command(command):
     try:
         result = subprocess.run(command, shell=True, check=True, text=True, capture_output=True)
         print(f"Success: {command}")
-        return result.stdout.strip()
+        return result.stdout
     except subprocess.CalledProcessError as e:
         print(f"Error running {command}: {e.stderr}")
         return None
