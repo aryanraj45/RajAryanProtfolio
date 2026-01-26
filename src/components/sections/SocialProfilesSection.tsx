@@ -39,7 +39,7 @@ const SocialProfilesSection = () => {
     return (
         <section className="mt-12">
             <h3 className="text-xl font-display font-semibold text-foreground mb-6">
-                Connect With Me
+                Connect With Me Globally
             </h3>
 
             <div className="grid gap-6">
