@@ -36,6 +36,7 @@ const AchievementsSection = () => {
     "Data Structures & Algorithms",
     "Object-Oriented Programming",
     "Database Management Systems",
+    "Time Management",
   ];
 
   return (
