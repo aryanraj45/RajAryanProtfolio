@@ -38,7 +38,7 @@ const ResumeSection = () => {
     webDev: ["React.js", "Node.js", "Express.js", "FastAPI", "HTML", "CSS", "Tailwind CSS"],
     aiAutomation: ["Retell AI", "N8N", "Prompt Engineering", "Webhook Integration"],
     databases: ["MySQL", "MongoDB", "PostgreSQL", "Google Sheets API"],
-    tools: ["Git", "GitHub", "VS Code", "Docker", "Google Calendar API", "RESTful APIs"],
+    tools: ["Git", "GitHub", "VS Code", "Postman", "Docker", "Google Calendar API", "RESTful APIs"],
   };
   return (
     <section>
