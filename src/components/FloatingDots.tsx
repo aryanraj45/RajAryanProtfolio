@@ -8,6 +8,7 @@ const FloatingDots = () => {
     { top: "85%", right: "10%", delay: "2.5s" },
     { top: "15%", left: "5%", delay: "0.3s" },
     { top: "35%", left: "2%", delay: "0.8s" },
+    { top: "50%", left: "20%", delay: "1.2s" },
   ];
 
   return (
