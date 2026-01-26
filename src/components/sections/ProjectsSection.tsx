@@ -98,6 +98,7 @@ const ProjectsSection = () => {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="View Source on GitHub"
                     className="p-3 rounded-lg bg-secondary hover:bg-secondary/80 text-muted-foreground hover:text-primary transition-all hover:scale-110"
                     onClick={(e) => e.stopPropagation()}
                   >
@@ -109,6 +110,7 @@ const ProjectsSection = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
+                    title="View Live Site"
                     className="p-3 rounded-lg bg-primary/20 hover:bg-primary/30 text-primary transition-all hover:scale-110"
                     onClick={(e) => e.stopPropagation()}
                   >
