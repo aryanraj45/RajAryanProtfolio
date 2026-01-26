@@ -10,6 +10,7 @@ A modern, responsive, and interactive personal portfolio website showcasing my p
 - **Interactive Project Cards**: Detailed project showcases with preview images and direct links.
 - **Resume Section**: View and download resume capabilities.
 - **Contact Integration**: Direct links to Email, LinkedIn, and GitHub.
+- **AI Automation Showcase**: Demonstrations of AI voice agents and workflow automation.
 
 ## 🛠️ Technologies Used
 
