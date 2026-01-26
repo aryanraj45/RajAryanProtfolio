@@ -86,6 +86,11 @@ const ProfileSidebar = () => {
             <span className="font-medium">Founding Engineer at INSTACK AI</span>
           </div>
 
+          <div className="mt-4 flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-500 text-xs font-semibold">
+            <span className="w-2 h-2 rounded-full bg-green-500 animate-pulse" />
+            Open for collaborations
+          </div>
+
           <button
             onClick={toggleTheme}
             className="mt-6 p-3 rounded-full bg-secondary/50 border border-border hover:bg-secondary transition-colors cursor-pointer group"
