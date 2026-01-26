@@ -18,9 +18,11 @@ const TabNavigation = ({ activeTab, onTabChange }: TabNavigationProps) => {
         <button
           key={tab.id}
           onClick={() => onTabChange(tab.id)}
-          className={`tab-link whitespace-nowrap ${
-            activeTab === tab.id ? "active" : ""
-          }`}
+          aria-selected={activeTab === tab.id}
+          role="tab"
+          title={`Switch to ${tab.label} section`}
+          className={`tab-link whitespace-nowrap ${activeTab === tab.id ? "active" : ""
+            }`}
         >
           {tab.label}
         </button>
