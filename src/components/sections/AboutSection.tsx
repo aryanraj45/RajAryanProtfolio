@@ -24,11 +24,18 @@ const AboutSection = () => {
       highlight: "FastAPI & Node.js",
     },
     {
-      icon: <Briefcase className="w-6 h-6" />,//
+      icon: <Briefcase className="w-6 h-6" />,
       title: "Problem Solving",
       description:
         "Solved 100+ problems on LeetCode and GeeksforGeeks. Strong foundation in Data Structures, Algorithms, and Object-Oriented Programming.",
       highlight: "LeetCode & DSA",
+    },
+    {
+      icon: <Database className="w-6 h-6" />,
+      title: "Cloud & DevOps",
+      description:
+        "Deploying and managing applications using Netlify, Vercel, and exploring Docker and CI/CD pipelines.",
+      highlight: "Deployment & Infrastructure",
     },
   ];
 
