@@ -50,7 +50,7 @@ const ContactSection = () => {
 
         <div className="flex justify-center mt-8">
           <a
-            href="mailto:rajaryan445567@gmail.com"
+            href="mailto:rajaryan445567@gmail.com?subject=Inquiry from Portfolio"
             className="inline-flex items-center gap-3 px-8 py-4 rounded-xl border border-border bg-secondary/50 hover:border-primary/50 hover:bg-secondary transition-all duration-300 group"
           >
             <Mail className="w-5 h-5 text-primary" />
