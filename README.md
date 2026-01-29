@@ -4,7 +4,7 @@ A modern, responsive, and interactive personal portfolio website showcasing my p
 
 ## ✨ Features  
 
-- **Modern UI/UX**: Clean, glassmorphism-inspired design with smooth animations.
+- **Modern UI/UX**: Clean, glassmorphism-inspired design with smooth animations.   
 - **Dark/Light Mode**: Fully functional theme toggle for user preference.
 - **Responsive Design**: Optimized for all devices, from mobile to desktop.
 - **Interactive Project Cards**: Detailed project showcases with preview images and direct links.
